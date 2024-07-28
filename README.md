@@ -44,6 +44,6 @@ Para rodar este projeto localmente, siga estas etapas:
 
 ## Contato
 
-Seu Nome - [@seu-usuario](https://twitter.com/seu-usuario) - seu.email@exemplo.com
+Julio Cesar Martins de Souza - julio2001nf@gmail.com
 
-Link do Projeto: [https://github.com/seu-usuario/seu-projeto](https://github.com/seu-usuario/seu-projeto)
+Link do Projeto: https://github.com/juliocesarnf/cronometro.git
