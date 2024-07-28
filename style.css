@@ -1,0 +1,135 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+}
+
+/* Opções */
+#option{
+    margin-bottom: 40px;
+}
+
+.option-btn{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px 14px;
+    font-size: 1.2em;
+}
+
+.option-btn:hover{
+    cursor: pointer;
+    background-color: #222;
+}
+
+#option-stopwatch{
+    border: #fff 1px solid;
+}
+
+/* Crônometro */
+#stopwatch-display{
+    justify-content: center;
+    font-size: 3.4em;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#stopwatch-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.stopwatch-buttons-btn{
+    width: 90px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.stopwatch-buttons-btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+/* Timer */
+#countdown{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#countdown-display{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.countdown-display-time{
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown-display-time-increment, .countdown-display-time-decrement{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.countdown-display-time-increment:hover, .countdown-display-time-decrement:hover{
+    cursor: pointer;
+    background-color: #222;
+}
+
+.countdown-display-points{
+    color: #fff;
+    font-size: 3.4em;
+    width: 0.9ch;
+}
+
+#countdown-display-hundredth{
+    width: 2ch;
+    color: #fff;
+    font-size: 3.4em;
+}
+
+.countdown-display-time-input{
+    text-align: center;
+    font-size: 3.4em;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    width: 2ch;
+}
+
+#countdown-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+
+.countdown-buttons-btn{
+    width: 90px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.countdown-buttons-btn{
+    cursor: pointer;
+    background-color: #ccc;
+}

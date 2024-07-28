@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="option">
+        <button class="option-btn" id="option-stopwatch">
+            Cronômetro
+        </button>
+        <button class="option-btn" id="option-countdown">
+            Timer
+        </button>
+    </div>
+    <div id="stopwatch">
+        <div id="stopwatch-display">00:00:00.00</div>
+        <div id="stopwatch-buttons">
+            <button class="stopwatch-buttons-btn" id="stopwatch-buttons-start">INICIAR</button>
+            <button class="stopwatch-buttons-btn" id="stopwatch-buttons-pause">PAUSAR</button>
+            <button class="stopwatch-buttons-btn" id="stopwatch-buttons-reset">REINICIAR</button>
+        </div>     
+    </div>  
+    <div id="countdown">
+        <div id="countdown-display">
+            <div class="countdown-display-time">
+                <button class="countdown-display-time-increment" onclick="increment('countdown-display-time-hours')">+</button>
+                <input type="text" class="countdown-display-time-input" id="countdown-display-time-hours" maxlength="2" value="00">
+                <button class="countdown-display-time-decrement" onclick="decrement('countdown-display-time-hours')">-</button>
+            </div>
+            <p class="countdown-display-points">:</p>
+            <div class="countdown-display-time">
+                <button class="countdown-display-time-increment" onclick="increment('countdown-display-time-minutes')">+</button>
+                <input type="text" class="countdown-display-time-input" id="countdown-display-time-minutes" maxlength="2" value="00" >
+                <button class="countdown-display-time-decrement" onclick="decrement('countdown-display-time-minutes')">-</button>
+            </div>
+            <p class="countdown-display-points">:</p>
+            <div class="countdown-display-time">
+                <button class="countdown-display-time-increment" onclick="increment('countdown-display-time-seconds')">+</button>
+                <input type="text" class="countdown-display-time-input" id="countdown-display-time-seconds" maxlength="2" value="00" >
+                <button class="countdown-display-time-decrement" onclick="decrement('countdown-display-time-seconds')">-</button>
+            </div>
+            <p class="countdown-display-points">.</p>
+            <p id="countdown-display-hundredth">00</p>
+        </div>
+        <div id="countdown-buttons">
+            <button class="countdown-buttons-btn" id="countdown-buttons-start">INICIAR</button>
+            <button class="countdown-buttons-btn" id="countdown-buttons-pause">PAUSAR</button>
+            <button class="countdown-buttons-btn" id="countdown-buttons-reset">ZERAR</button>
+        </div> 
+    </div>
+</body>
+</html>
